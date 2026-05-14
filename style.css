@@ -112,7 +112,7 @@ button:hover {
 /* FLOATING PNGS */
 .floating {
     position: absolute;
-    width: 100px;
+    width: 200px;
     animation: float 3s ease-in-out infinite;
 }
 
