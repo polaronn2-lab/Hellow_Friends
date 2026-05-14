@@ -117,12 +117,12 @@ button:hover {
 }
 
 .left {
-    left: -130px;
+    left: -220px;
     top: 50%;
 }
 
 .right {
-    right: -130px;
+    right: -220px;
     top: 50%;
 }
 
@@ -137,4 +137,19 @@ button:hover {
     100% {
         transform: translateY(0px);
     }
+}
+
+/* MEMORY PHOTO */
+.memory-photo {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 18px;
+    margin-bottom: 25px;
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.15);
+
+    transform: rotate(-2deg);
 }
