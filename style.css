@@ -106,10 +106,10 @@ button:hover {
 
 /* LETTER BOX */
 .letter-box {
-    background-color: #fff8dc;
+    background-color: #d2b48c;
     color: #333;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 25px;
     max-width: 600px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
@@ -190,27 +190,6 @@ button:hover {
     transform: rotate(-4deg);
 }
 
-/* makes collage feel like it's pinned/taped */
-.photo-collage::before,
-.photo-collage::after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 25px;
-    background: rgba(255, 245, 200, 0.8);
-
-    top: -10px;
-    border-radius: 5px;
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transform: rotate(-5deg);
-}
-
-/* second tape strip */
-.photo-collage::after {
-    right: 20px;
-    transform: rotate(6deg);
-}
 .photo-collage {
     position: relative;
     width: 100%;
