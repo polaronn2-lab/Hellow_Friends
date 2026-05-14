@@ -1,60 +1,133 @@
+/* PAGE BACKGROUND */
 body {
     margin: 0;
     padding: 0;
-    background-color: #3aa655;
-    font-family: Arial, sans-serif;
-    color: white;
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #dcefd8;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #4a5a46;
 }
 
+/* MAIN CONTAINER */
 .container {
     text-align: center;
+    position: relative;
 }
 
+/* COVER PAGE */
+#coverPage {
+    background: #f8fff5;
+    padding: 50px;
+    border-radius: 25px;
+    width: 400px;
+
+    box-shadow:
+        8px 8px 0px #c7dfc1,
+        0 10px 25px rgba(0,0,0,0.08);
+
+    border: 3px dashed #b7d4af;
+}
+
+/* TITLE */
 h1 {
-    margin-bottom: 25px;
-    font-size: 3rem;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #5f7d5a;
 }
 
+/* INPUT */
 input {
-    padding: 12px;
-    width: 250px;
-    border: none;
-    border-radius: 8px;
+    width: 260px;
+    padding: 14px;
+
+    border: 2px solid #c9ddc3;
+    border-radius: 15px;
+
+    background: white;
     font-size: 16px;
+    outline: none;
 }
 
+input:focus {
+    border-color: #98bf91;
+}
+
+/* BUTTON */
 button {
-    margin-top: 15px;
-    padding: 12px 25px;
+    margin-top: 18px;
+    padding: 12px 30px;
+
     border: none;
-    border-radius: 8px;
-    background-color: white;
-    color: #3aa655;
+    border-radius: 15px;
+
+    background-color: #b9d9b1;
+    color: #355132;
+
     font-size: 16px;
+    font-weight: bold;
+
     cursor: pointer;
+    transition: 0.25s;
 }
 
 button:hover {
-    opacity: 0.9;
+    transform: scale(1.05);
+    background-color: #a8cf9e;
 }
 
+/* ERROR */
 #errorMessage {
-    color: #ffd6d6;
     margin-top: 15px;
+    color: #cc7c7c;
 }
 
+/* HIDDEN */
 .hidden {
     display: none;
 }
 
-#letterPage {
-    max-width: 500px;
-    background: rgba(255,255,255,0.15);
-    padding: 30px;
-    border-radius: 15px;
+/* LETTER PAGE */
+.letter-box {
+    background-color: #fff8dc;
+    color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* FLOATING PNGS */
+.floating {
+    position: absolute;
+    width: 100px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.left {
+    left: -130px;
+    top: 50%;
+}
+
+.right {
+    right: -130px;
+    top: 50%;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-18px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
