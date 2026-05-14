@@ -11,6 +11,8 @@ body {
     background-color: #dcefd8;
     font-family: "Trebuchet MS", sans-serif;
     color: #4a5a46;
+
+    overflow-x: hidden;
 }
 
 /* MAIN CONTAINER */
@@ -81,18 +83,23 @@ button:hover {
     background-color: #a8cf9e;
 }
 
-/* ERROR */
+/* ERROR MESSAGE */
 #errorMessage {
     margin-top: 15px;
     color: #cc7c7c;
 }
 
-/* HIDDEN */
+/* HIDDEN CLASS */
 .hidden {
     display: none;
 }
 
 /* LETTER PAGE */
+#letterPage {
+    position: relative;
+}
+
+/* LETTER BOX */
 .letter-box {
     background-color: #fff8dc;
     color: #333;
