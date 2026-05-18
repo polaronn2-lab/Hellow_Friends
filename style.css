@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    animation: fadeIn 1s ease;
 
     display: flex;
     justify-content: center;
@@ -18,6 +19,16 @@ body {
         radial-gradient(#ffffff33 1px, transparent 1px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* MAIN CONTAINER */
