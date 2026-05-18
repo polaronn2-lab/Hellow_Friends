@@ -130,34 +130,17 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* FLOATING PNGS */
-.floating {
-    position: absolute;
-    width: 800px;
-    animation: float 3s ease-in-out infinite;
+/* BOUNCING STRAWBERRIES */
+.bouncy-strawberry {
+    position: fixed;
+    width: 120px;
+    cursor: grab;
+    z-index: 999;
+    user-select: none;
 }
 
-.left {
-    left: -530px;
-    top: 50%;
-}
-
-.right {
-    right: -530px;
-    top: 50%;
-}
-
-/* FLOAT ANIMATION */
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-18px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+.bouncy-strawberry:active {
+    cursor: grabbing;
 }
 /* PHOTO COLLAGE CONTAINER */
 .photo-collage {
