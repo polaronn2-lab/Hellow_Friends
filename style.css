@@ -43,7 +43,7 @@ body {
     padding: 50px;
     border-radius: 25px;
     width: 400px;
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
 
     box-shadow:
         8px 8px 0px #c7dfc1,
