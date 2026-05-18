@@ -133,7 +133,7 @@ button:hover {
 /* BOUNCING STRAWBERRIES */
 .bouncy-strawberry {
     position: fixed;
-    width: 120px;
+    width: 520px;
     cursor: grab;
     z-index: 999;
     user-select: none;
