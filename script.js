@@ -23,15 +23,15 @@ function startBouncing() {
             el: document.getElementById("strawberry1"),
             x: 100,
             y: 100,
-            dx: 2,
-            dy: 1.8
+            dx: 0.6,
+            dy: 0.4
         },
         {
             el: document.getElementById("strawberry2"),
             x: 500,
             y: 250,
-            dx: -2.2,
-            dy: 1.5
+            dx: -0.5,
+            dy: 0.3
         }
     ];
 
