@@ -130,17 +130,36 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* BOUNCING STRAWBERRIES */
-.bouncy-strawberry {
-    position: fixed;
-    width: 520px;
-    cursor: grab;
-    z-index: 999;
-    user-select: none;
+/* FLOATING STRAWBERRIES */
+.floating {
+    position: absolute;
+    width: 500px;
+    animation: float 3.5s ease-in-out infinite;
+    pointer-events: none; /* so they don't interfere */
 }
 
-.bouncy-strawberry:active {
-    cursor: grabbing;
+.left {
+    left: -220px;
+    top: 50%;
+}
+
+.right {
+    right: -220px;
+    top: 50%;
+}
+
+/* gentle up/down motion */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-18px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 }
 /* PHOTO COLLAGE CONTAINER */
 .photo-collage {
